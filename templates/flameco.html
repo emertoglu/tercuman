@@ -1,0 +1,155 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="container">
+    <div class="container text-center ">
+        {% if request.user.is_authenticated %}
+        <span style="font-size: 2em; color:#C98C30;">
+            <i class="fas fa-music"></i></i> Merhaba, {{request.user.username}}
+        </span> 
+           {% else %}
+           <span style="font-size: 2em; color:#C98C30;">
+            <i class="fas fa-comments"></i> Lütfen Kayıt Olunuz
+          </span> 
+           {% endif %}
+       </div>   
+   <hr>
+    <div class="row featurette rounded">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Rumba </h2>
+          <p class="lead">İspanyol Flamenko Gitar Tekniğidir, Usta Flamenkocuların Bile Zorlandığı Yapılması zor bir Tekniktir, Derslerimizde Bu tekiniğin derinliklerine inip kesin sonuç alarak öğreniceğiz.</p>
+        </div>
+        <div class="col-md-5">
+            <video controls width="420px" height="240px">
+              <source src="/static/rumba.mp4" />
+            </video>
+          </div>
+  </div>
+
+    <hr>
+    <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Apiyando </h2>
+          <p class="lead">Flamenco Gitar Tekniklerinde yapılması diğer zor bir teknik olan Apiyonda Tekniğini Öğreniyor Olucağız 2 ders sürekcek olan bu dersimiz ile bol tekrar ve tekniğin inceliklerini öğreneceğiz.</p>
+        </div>
+        <div class="col-md-5">
+          <video controls width="420px" height="240px">
+            <source src="/static/apiyando.mp4" />
+          </video>
+        </div>
+        </div>
+
+    <hr>
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Huapango</h2>
+          <p class="lead">Meksika Tekniği olan Huapango zanedilen aslına çok ama çok bir tekniktir, Derslerimizde sizlere aktarıcağımız bilgiler ve tekniklikler ile tüm teknikşeri yapıyor olucaksınız .</p>
+        </div>
+        <div class="col-md-5">
+            <video controls width="420px" height="240px">
+              <source src="/static/huapango.mp4" />
+            </video>
+          </div>
+  </div>
+
+<hr>
+<div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Herkez Gitar Çalabilir,Önemli Olan İstek ve Arzularınız. </h2>
+      <p class="lead">Profesional Ders Programamımız,35 Yılı Aşkın Gitar Çalma Deneyimimiz,UluslarArası Konservatuar Müfredatlarınına Uygun akıcı ve zevkli Ders Programları , Yeteneğinize Göre Yönlendirme, Herkez Classic Gitar Çalmak istemeye bilir ve Daha çok Ritim Duygusu ile Gitar Öğrene bilir bunun verdiği yetenek ile Daha hızlı ve etkili Öğrenme.ilk 11 Konumuz  aşağıdaki gibidir. </p>
+    </div>
+    <div class="col-md-5">
+      <img class="featurette-image img-fluid mx-auto" src="/static/hoca3.JPG" alt="Generic placeholder image1">
+    </div>
+  </div>
+
+</div>
+<hr>
+<table class="table container">
+    <thead>
+      <tr>
+        <th scope="col">*</th>
+        <th scope="col">Konu</th>
+        <th scope="col"></th>
+        <th scope="col">Ders Sayısı</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Apoyando </td>
+        <td><i class="fas fa-book"></i></td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Flamenco veya Klasik</td>
+        <td><i class="fas fa-book"></i></td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Rasgueado</td>
+        <td><i class="fas fa-book"></i></td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>Rasgueado-2</td>
+        <td><i class="fas fa-book"></i></td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>Picado</td>
+        <td><i class="fas fa-book"></i></td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td>Arpegios </td>
+        <td><i class="fas fa-book"></i></td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <th scope="row">7</th>
+        <td>Tremelo</td>
+        <td><i class="fas fa-book"></i></td>
+        <td>2-3</td>
+      </tr>
+      <tr>
+        <th scope="row">8</th>
+        <td>Legato</td>
+        <td><i class="fas fa-book"></i></td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th scope="row">9</th>
+        <td>Abanicó</td>
+        <td><i class="fas fa-book"></i></td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th scope="row">10</th>
+        <td>Azapuá</td>
+        <td><i class="fas fa-book"></i></td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <th scope="row">11</th>
+        <td>Practice</td>
+        <td><i class="fas fa-book"></i></td>
+        <td>0</td>
+      </tr>
+
+    </tbody>
+  </table>
+  <hr class="container">
+  <footer class="container">
+    <p class="float-right"><a href="/contact/contact/">Bize Ulaşın</a></p>
+    <p>&copy; 2017-2018 Tercüman48, Inc. &middot; <a href="/">Desing by</a> &middot; <a href="https://people.djangoproject.com/sunmar/"><i class="fab fa-python"></i></a></p>
+  </footer>
+</main>
+</div>
+
+{% endblock body %}

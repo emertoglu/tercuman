@@ -1,0 +1,122 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+<div class="container text-center ">
+  {% if request.user.is_authenticated %}
+  <span style="font-size: 2em; color:#C98C30;">
+    <i class="fas fa-globe-americas"></i> Merhaba, {{request.user.username}}
+  </span> 
+     {% else %}
+     <span style="font-size: 2em; color:#C98C30;">
+      <i class="fas fa-comments"></i> Lütfen Kayıt Olunuz
+    </span> 
+     {% endif %}
+ </div>   
+
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="/static/tercüman.JPG" alt="Generic placeholder image6" width="325" height="325">
+            <h2>Uzman Çevirmenler</h2>
+            <p>Son Yıllarda Rabet Gören Diller Çok hızlı bir şekilde kendini yenilemekte olup, Döviz Bırkan Müşteri Sayısı Gün geçtikçe Değişmekte son Yıllardaki Rus Müşteri talebi Kadromuzda yeni 2 aykırı dil kazadırıdı ve siz müşterilemizi Üç Dilde Profesional Çevirmenlermiz Tarafında Hızlı ve Güvelir Çeviri yapar Hale geldik.</p>
+            <p><a class="btn btn-warning" href="/crm/translate/" role="button">Devam Et &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="/static/hoca2.JPG" alt="Generic placeholder image5" width="325" height="325">
+            <h2>Sıfırdan İleri Seviye İnglizce ve Almanca Dersleri</h2>
+            <p>Uzun Yıllardır 100 Yakın öğrenciye Almanca ve İngilizce Ders vermiş Hocalarımız tarafından , Süper bir Müfredat ile İnglizcenizi ve Almanca 0'dan iler seviye taşıyoruz,Gerekli özveri istek içinizde var ise çok yakın zamadan İngilizce Ve Almaca Konuşur Hale Geliyorsunuz.</p>
+            <p><a class="btn btn-warning" href="/contact/england" role="button">Devam Et &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="/static/gitar.JPG" alt="Generic placeholder image4" width="325" height="325">
+            <h2>Flameco Ve Classic Gitar Dersleri</h2>
+            <p>Sanat Sanatçıdan Öğrenilir Felsefemiz ile Tüm tecrübemizi Sizlere Aktarmaya Çalışıyoruz. </p>
+            <p><a class="btn btn-warning" href="/contact/flamenco/" role="button">Devam Et &raquo;</a></p>
+            
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Özel Çeviriler <span class="text-muted">Kişe Özel Hızlı Çeviri.</span></h2>
+            <p class="lead">Konu İçeriği Özel Olan,Paylaşımı İstenmeyen Özel Çeviriler ile Çeviride Kolaylık Sağalayan Kurmsal Yapı.Yanı Sıra Size Özel Belgenin Gizlilik Esasları En Önemli İş Konumuzdur.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto rounded" src="/static/resim3.jpg" alt="Generic placeholder image3">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Yüksek kaliteli tercümeler <span class="text-muted">.</span></h2>
+            <p class="lead">Tercüman48 tercümanlarının gerçekleştirdiği tercümeler,
+                    size teslim edilmeden önce Tercüman48 Çevirmen tarafından profesyonel tercüme kontrol programları ile dilbilgisi, imla, tercüme uygunluk kriterlerine göre özenle kontrol edilir.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto rounded" src="/static/resim2.jpg" alt="Generic placeholder image2">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Hızlı ve Zamanında Teslim <span class="text-muted">Checkmate Prosedörü</span></h2>
+            <p class="lead">Zamanın sizin için ne kadar önemli olduğunun farkındayız. Bu yüzden tercümenizin tercüme ekibimiz tarafından, teklifimizde belirtilen gün ve saatte teslim edilmesi en önemli önceliğimizdir.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto rounded" src="/static/resim6.jpg" alt="Generic placeholder image1">
+          </div>
+        </div>
+        
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                  <h2 class="featurette-heading">Cebinizdeki Tercüme Ofisi <span class="text-muted">Bir Telefon Uzakta</span></h2>
+                  <p class="lead">Muğlanın neresinde olursanız olun tercüme ofisine gitmeden dokümanınızın tercümesini gerçekleştirebilirsiniz.Tek yapmanız gereken bize ulaşmak. Dokümanınızın dijital kopyası olmasa dahi fotoğrafını çekerek bize gönderin, çeviri metin analiz programı ile metinleri ayıklayarak tercümenize hemen başlayalım.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                  <img class="featurette-image img-fluid mx-auto rounded" src="/static/resim10.jpg" alt="Generic placeholder image2">
+                </div>
+          </div>
+          <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Her türlü soru ve ihtiyacınızı yanıtlayan Müşteri Deneyimi Ekibi <span class="text-muted"></span></h2>
+            <p class="lead">Belgeleriniz için profesyonel online çeviri hizmeti ihtiyaçlarınız konusunda en hızlı şekilde canlı destek sistemi ile iletişime geçebileceğiniz profesyonel çeviri şirketi Tercüman48'in tercüman ekibi, sizlere yüksek kalite standartları ile hizmet vermeyi misyon haline getirmiş uzman bir kadrodan oluşmaktadır.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto rounded" src="/static/resim1.gif" alt="Generic placeholder image1">
+          </div>
+        </div>
+
+      </div><!-- /.container -->
+      <hr>
+        
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="/contact/contact/">Bize Ulaşın</a></p>
+        <p>&copy; 2017-2018 Tercüman48, Inc. &middot; <a href="/">Desing by</a> &middot; <a href="https://people.djangoproject.com/sunmar/"><i class="fab fa-python"></i></a></p>
+      </footer>
+    </main>
+
+
+{% endblock body %}

@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="container text-center ">
+    {% if request.user.is_authenticated %}
+    <span style="font-size: 2em; color:#C98C30;">
+      <i class="fas fa-globe-americas"></i> Merhaba, {{request.user.username}}
+    </span> 
+       {% else %}
+       <span style="font-size: 2em; color:#C98C30;">
+        <i class="fas fa-comments"></i> Lütfen Kayıt Olunuz
+      </span> 
+       {% endif %}
+   </div>   
+   <br>
+<div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">İngilizce </h2>
+      <p class="lead">Konu İçeriği Özel Olan,Paylaşımı İstenmeyen Özel Çeviriler ile Çeviride Kolaylık Sağalayan Kurmsal Yapı.Yanı Sıra Size Özel Belgenin Gizlilik Esasları En Önemli İş Konumuzdur.</p>
+    </div>
+    <div class="col-md-5">
+      <img class="featurette-image img-fluid mx-auto rounded" src="/static/resim3.jpg" alt="Generic placeholder image3">
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading">Almanca </h2>
+      <p class="lead">Tercüman48 tercümanlarının gerçekleştirdiği tercümeler,
+              size teslim edilmeden önce Tercüman48 Çevirmen tarafından profesyonel tercüme kontrol programları ile dilbilgisi, imla, tercüme uygunluk kriterlerine göre özenle kontrol edilir.</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <img class="featurette-image img-fluid mx-auto rounded" src="/static/resim2.jpg" alt="Generic placeholder image2">
+    </div>
+  </div>
+  <hr class="featurette-divider">
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Ruşça </h2>
+      <p class="lead">Konu İçeriği Özel Olan,Paylaşımı İstenmeyen Özel Çeviriler ile Çeviride Kolaylık Sağalayan Kurmsal Yapı.Yanı Sıra Size Özel Belgenin Gizlilik Esasları En Önemli İş Konumuzdur.</p>
+    </div>
+    <div class="col-md-5">
+      <img class="featurette-image img-fluid mx-auto rounded" src="/static/resim3.jpg" alt="Generic placeholder image3">
+    </div>
+  </div>
+  <footer class="container">
+    <p class="float-right"><a href="/contact/contact/">Bize Ulaşın</a></p>
+    <p>&copy; 2017-2018 Tercüman48, Inc. &middot; <a href="/">Desing by</a> &middot; <a href="https://people.djangoproject.com/sunmar/"><i class="fab fa-python"></i></a></p>
+  </footer>
+</main>
+
+
+
+
+{% endblock body %}

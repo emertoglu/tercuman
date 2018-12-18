@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+{% load crispy_forms_tags %}
+<div class="row">
+        <div class="col-md-6 ">
+            <h3>İletişim Formu</h3>
+            <hr>
+            <form method = "post">
+                {% csrf_token %}
+                {{form.media}}
+                {{form|crispy}}
+                <br>
+                <button type = "submit" class = "btn btn-warning">Gönder</button>
+            </form>
+        </div>
+      </div>
+      <br>
+      <br>
+      <footer>
+        <p class="float-right"><a href="/">Back to top</a></p>
+        <p>&copy; 2017-2018 Tercüman48, Inc. &middot; <a href="/">Desing by</a> &middot; <a href="https://people.djangoproject.com/sunmar/"><i class="fab fa-python"></i></a></p>
+      </footer>
+    </main>
+
+{% endblock body %}
